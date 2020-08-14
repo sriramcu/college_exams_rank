@@ -1,0 +1,24 @@
+<html>
+<title>Choose Result</title>
+<a href="/">Home</a>
+<p>The choices below are in the format Student name:Fuzzy Search Score </p>
+<ol>
+    {% for fuzz_tuple in my_list %}
+        <li> {{ fuzz_tuple[0] }} : {{ fuzz_tuple[1] }} </li>  
+    {% endfor %}
+</ol>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.item_no.label }}     {{ form.item_no(size=32) }}
+    </p>
+        
+    <p>{{ form.submit() }}</p>
+</form>
+</html>

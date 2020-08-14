@@ -1,0 +1,12 @@
+<html>
+<title>Ranks analyser</title>
+<a href="/">Home</a><br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.sem_no.label }}     {{ form.sem_no(size=32) }}
+    </p>
+        
+    <p>{{ form.submit() }}</p>
+</form>
+</html>
